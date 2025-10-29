@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Subtitle Word Search",
+  "version": "1.0",
+  "description": "Click on YouTube subtitle words to search them in Google.",
+  "permissions": ["tabs", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
+
+
